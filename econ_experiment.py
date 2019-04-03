@@ -181,7 +181,7 @@ def get_round_input(i, with_money):
     if i in SPECIAL_ROUNDS:
         get_special_round_message(i)
     confirmed = False
-    os.system("clear")
+    # os.system("clear")
     while not confirmed:
         print("ROUND {}".format(i + 1))
         print_debts(with_money)
