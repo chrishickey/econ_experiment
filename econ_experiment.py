@@ -252,7 +252,7 @@ def write_files(name, sub_optimal_percentage, debts):
 
     with open(os.path.join(USER_DATA_PATH, "{name}_total.txt".format(name=name)), "w+") as fh:
         fh.write("TOTAL DEBT {}\n".format(name))
-        fh.write(str(round(sum([float(condition["AMOUNT"]) for condition in EXPERIMENTAL_CONDITION]), 2)))
+        fh.write(str(round(sum([float(condition["AMOUNT"]) for condition in EXPERIMENTAL_CONDITION]), 2)) + "\n")
 
 
 if __name__ == "__main__":
