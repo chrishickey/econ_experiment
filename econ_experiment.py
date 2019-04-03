@@ -7,6 +7,12 @@ EXPERIMENTAL_CONDITION = [
     {"DEBT": "6", "INTEREST": "4.0", "AMOUNT": "60000"}
 ]
 
+# EXPERIMENTAL_CONDITION = [
+#     {"DEBT": "1", "INTEREST": "3", "AMOUNT": "35000"},
+#     {"DEBT": "2", "INTEREST": "3.75", "AMOUNT": "52000"},
+#     {"DEBT": "3", "INTEREST": "4.0", "AMOUNT": "60000"}
+# ]
+
 INTEREST_PER_DEBT = {
     "1": 0,
     "2": 0,
