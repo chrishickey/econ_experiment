@@ -249,10 +249,10 @@ def write_files(name, sub_optimal_percentage, debts):
 
     with open(os.path.join(USER_DATA_PATH, "{name}_debts.txt".format(name=name)), "w+") as fh:
         fh.write("DEBT PER ROUND {}\n".format(name))
-        fh.write("{}{}{}{}{}{}\n"
+        fh.write("{}{}{}{}{}{}{}\n"
                  .format("ROUND".ljust(10), "DEBT 1".center(10), "DEBT 2".center(10), "DEBT 3".center(10), "DEBT 4".center(10), "DEBT 5".center(10), "DEBT 6".rjust(10)))
         for i in range(len(sub_optimal_percentage) + 1):
-            fh.write("{}{}{}{}{}{}\n"
+            fh.write("{}{}{}{}{}{}{}\n"
                      .format(str(i + 1).ljust(10), str(debts[i]["1"]).center(10), str(debts[i]["2"]).center(10), str(debts[i]["3"]).center(10),
                              str(debts[i]["4"]).center(10), str(debts[i]["5"]).center(10), str(debts[i]["6"]).rjust(10)))
 
